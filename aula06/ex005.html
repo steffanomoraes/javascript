@@ -15,11 +15,19 @@
 <body>
     <h1>Iniciando os estudos do DOM</h1>
     <P>Aqui vai um resultado.</P>
-    <p>Apredendo a usar o <strong>DOM</strong> em Javascript</p>
-    <div>Clique em mim</div> <br>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div> <br>
+    <div id="msga">Clique em mim</div> <br>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]
-        window.document.write('Está escrito assim:' + p1.innerText) // Navegando pela arvore DOM
+        window.document.write('Está escrito assim: ' + p1.innerText) // Navegando pela arvore DOM'
+
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Alterações no HTML por ID'
+        d.style.background = 'green'
+        
+        var n = window.document.getElementsByName('msga')
+        n.innerText = 'Alterações no HTML por Name'
     </script>
 </body>
 </html>
