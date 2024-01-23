@@ -22,12 +22,13 @@
         var p1 = window.document.getElementsByTagName('p')[0]
         window.document.write('Está escrito assim: ' + p1.innerText) // Navegando pela arvore DOM'
 
-        var d = window.document.getElementById('msg')
+        var d = window.document.getElementById('msg') // Selecionando objeto por  ID
         d.innerText = 'Alterações no HTML por ID'
         d.style.background = 'green'
-        
-        var n = window.document.getElementsByName('msga')
-        n.innerText = 'Alterações no HTML por Name'
+
+        var z = window.document.querySelector('div#msga') // Selecionando objeto por Seletor
+        z.style.background = 'black'
+
     </script>
 </body>
 </html>
