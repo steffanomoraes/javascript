@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <label for="nacao">Pais: </label> <input type="text" name="nacao" id="inacao">
+    <input type="button" value="Verificar" onclick="teste()">
+    <div id="res"></div>
+    <script>
+        function teste(){
+            var nacao = window.document.getElementById('inacao')
+            var res = window.document.getElementById('res')
+            var nacao = String(nacao.value)
+            res.innerHTML = `<p>Você está vivendo no ${nacao}.</p>`
+            if (nacao != 'Brasil') {
+                res.innerHTML+=`<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }
+            else {
+                res.innerHTML += `<p> Você é <strong>Brasileiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
