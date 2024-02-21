@@ -10,7 +10,10 @@ function verificar() {
     }
     else {
         fsex = document.getElementsByName('sex')
-        var idade = ano - fano.value 
+        var idade = ano - fano.value
+        var genero = document.getElementsByName('sex')
+        
         res.innerHTML = `Idade calculada: ${idade}`
+
     }
 }
